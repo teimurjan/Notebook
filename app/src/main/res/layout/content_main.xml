@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ccc9c9"
+
+        android:padding="5dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.android.notebook.MainActivity"
+        tools:showIn="@layout/app_bar_main">
+
+    <fragment
+            android:id="@+id/mainActivityFrag"
+            android:name="com.example.android.notebook.MainActivityListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </fragment>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:src="@drawable/plus"
+        android:layout_margin="16dp"
+        app:backgroundTint="#66BB6A"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/mainActivityFrag"
+        android:layout_alignEnd="@+id/mainActivityFrag" />
+
+
+</RelativeLayout>
+
